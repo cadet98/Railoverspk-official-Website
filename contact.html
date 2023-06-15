@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" type="image/png" href="contact-favicon.jpg">
     <title>Contact Form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
+     body {
+            background-image: url("background-image.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
         .container {
             margin-top: 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin-right: 10px;
+            color: #333;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -16,37 +46,30 @@
         <form>
             <div class="form-group">
                 <label for="name">Name:</label>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="material-icons">person</i></span>
-                    </div>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                </div>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="material-icons">email</i></span>
-                    </div>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                </div>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
             </div>
             <div class="form-group">
                 <label for="message">Message:</label>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="material-icons">message</i></span>
-                    </div>
-                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
-                </div>
+                <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/mynameisrailoverspk" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/railoverspk" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/railoverspk" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@railoverspk" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
